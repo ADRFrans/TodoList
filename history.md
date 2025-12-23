@@ -7,15 +7,15 @@ This file is maintained by the assistant to track your progress so we can resume
 - When asked "Where did we leave off" or "next steps", read both `history.md` and `LearningPlan.md` first.
 - Response format: short description of the last session completed, then next steps.
 - I will update history.md and LearningPlan.md during the session (as needed) and at the end of each session without prompting.
-- At logical checkpoints, I will prompt you to update your git repo (status/add/commit, and push if desired).
+- At logical checkpoints, I will prompt you to update your git repo (status/add/commit, and push if desired). 
 ## Current status
 
 - Date: 2025-12-23
 - Current milestone: Milestone 2 (State and events)
-- What you worked on: Added `useState`, input, add button, and handler to append todos.
+- What you worked on: Added toggle handler for completion and annotated the todo flow.
 - What felt easy:
 - What felt confusing: Handling empty input and where to place `handleAdd`.
-- Next step: Add a label/placeholder and toggle completion with checkbox clicks.
+- Next step: Add a label/placeholder and start styling or add delete/edit.
 
 ## Log
 
@@ -41,7 +41,7 @@ This file is maintained by the assistant to track your progress so we can resume
 - 2025-12-23: Added a Git essentials section to the learning plan.
 - 2025-12-23: Expanded Git coverage to a beginner-to-intermediate command checklist.
 - 2025-12-23: Added daily Git practice note (sprinkle commands each session).
-
+- 2025-12-23: Added toggle handler for completion and annotated the todo flow.
 
 
 

@@ -1,10 +1,16 @@
 import TodoItem from "./TodoItem";
 
-function TodoList({items}) {
+function TodoList({items, onToggle}) {
     return (
         <ul>
             {items.map((item) => (
-                <TodoItem key={item.id} text={item.text} completed={item.complete}/>
+                /* Pass the item id back up when toggling. */
+                <TodoItem 
+                key={item.id} 
+                text={item.text} 
+                completed={item.complete} 
+                onToggle={() => onToggle(item.id)}
+                />
             ))}
         </ul>
     )

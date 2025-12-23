@@ -20,6 +20,16 @@ function App() {
     setItems([...items, newItem]);
     setNewText("");
   }
+  // Flip completed for the clicked item.
+  function handleToggle(id) {
+    setItems(
+      items.map((item) =>
+        item.id === id
+          ? { ...item, complete: !item.complete }
+          : item
+      )
+    )
+  }
 
   return (
     <>
@@ -35,7 +45,7 @@ function App() {
         <button onClick={handleAdd}>Add</button>
         <section>
           <h2>Today</h2>
-          <TodoList items={items} />
+          <TodoList items={items} onToggle={handleToggle} />
         </section>    
         <section>
           <h2>Tomorrow</h2>
