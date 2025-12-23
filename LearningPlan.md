@@ -125,10 +125,14 @@ Topics
 - Basic styling (CSS modules, plain CSS, or a simple framework)
 - Accessibility basics (labels, focus, contrast)
 - Readme and deployment
+- Separation of concerns (custom hooks and helper files)
+- State management overview (Context API, `useReducer`, Redux)
 
 Practice ideas
 - Add a clean UI for your todo app.
 - Write a short README and deploy to Netlify or GitHub Pages.
+- Refactor one feature into a custom hook and a small helper file.
+- Compare when to use Context, `useReducer`, or Redux with a tiny example.
 
 Checkpoints
 - Your app is usable by someone else.
@@ -152,6 +156,66 @@ Stretch ideas
 - If you are stuck for more than 30 minutes.
 - If your app renders but does not behave as expected.
 - If you want feedback on your structure or naming.
+
+## Git essentials (use along the way)
+
+- `git status` to check what changed
+- `git add .` to stage changes
+- `git commit -m "message"` to save progress
+- `git log --oneline` to review history
+- `git push` to sync with GitHub
+- `git pull` to sync from GitHub
+
+## Git checklist (beginner to intermediate)
+
+Basics
+- `git status` see working tree state
+- `git add <file>` stage specific files
+- `git add .` stage everything
+- `git commit -m "message"` save a snapshot
+- `git log --oneline` quick history view
+- `git diff` see unstaged changes
+- `git diff --staged` see staged changes
+
+Remote sync
+- `git remote -v` verify remotes
+- `git push -u origin main` first push
+- `git push` subsequent pushes
+- `git pull` fetch + merge from remote
+
+Branches
+- `git branch` list branches
+- `git branch <name>` create a branch
+- `git checkout <name>` switch branches (older)
+- `git switch <name>` switch branches (newer)
+- `git checkout -b <name>` create + switch (older)
+- `git switch -c <name>` create + switch (newer)
+- `git merge <name>` merge a branch into current
+
+Undo and recover
+- `git restore <file>` discard unstaged changes
+- `git restore --staged <file>` unstage a file
+- `git reset --soft HEAD~1` undo last commit, keep changes staged
+- `git reset --mixed HEAD~1` undo last commit, keep changes unstaged
+- `git revert <commit>` undo via a new commit (safe for shared history)
+
+Stash and clean
+- `git stash` save work in progress
+- `git stash pop` reapply stash and remove it
+- `git stash list` list stashes
+
+Tags (optional)
+- `git tag` list tags
+- `git tag -a v1.0.0 -m "message"` create a tag
+
+Conflicts
+- `git status` shows conflicts
+- Edit files to resolve conflicts, then `git add` and `git commit`
+
+## Daily Git practice
+
+- I will sprinkle 1 to 2 Git commands into each session so you practice regularly.
+- Commands will match the task (status, diff, add, commit, push).
 
 ## How I will help
 

@@ -31,3 +31,7 @@ This file is maintained by the assistant to track your progress so we can resume
 - 2025-12-23: Added state for items and newText, plus add button handler.
 - 2025-12-23: Moved `handleAdd` above `return` and added empty input guard.
 - 2025-12-23: Ended session after completing add-todo flow.
+- 2025-12-23: Added Milestone 6 guidance (custom hooks, helper files, state management overview).
+- 2025-12-23: Added a Git essentials section to the learning plan.
+- 2025-12-23: Expanded Git coverage to a beginner-to-intermediate command checklist.
+- 2025-12-23: Added daily Git practice note (sprinkle commands each session).
