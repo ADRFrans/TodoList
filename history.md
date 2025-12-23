@@ -2,6 +2,12 @@
 
 This file is maintained by the assistant to track your progress so we can resume quickly.
 
+## Session protocol
+
+- When asked "Where did we leave off" or "next steps", read both `history.md` and `LearningPlan.md` first.
+- Response format: short description of the last session completed, then next steps.
+- I will update history.md and LearningPlan.md during the session (as needed) and at the end of each session without prompting.
+- At logical checkpoints, I will prompt you to update your git repo (status/add/commit, and push if desired).
 ## Current status
 
 - Date: 2025-12-23
@@ -35,3 +41,7 @@ This file is maintained by the assistant to track your progress so we can resume
 - 2025-12-23: Added a Git essentials section to the learning plan.
 - 2025-12-23: Expanded Git coverage to a beginner-to-intermediate command checklist.
 - 2025-12-23: Added daily Git practice note (sprinkle commands each session).
+
+
+
+
