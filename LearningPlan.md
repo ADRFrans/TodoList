@@ -15,7 +15,7 @@ A gentle, beginner-friendly path from "never used React" to "build and ship a sm
 - Build tiny things early and often.
 - If a task runs past 60 minutes, pause and log where you got stuck.
 
-## Milestone 0: Setup and orientation (1 to 2 sessions)
+## Milestone 0: Setup and orientation (1 to 2 sessions) ✅
 
 Goal: Get a working environment and a basic mental model.
 
@@ -28,7 +28,7 @@ Checkpoints
 - You can explain what `src`, `public`, and `package.json` are for.
 - You can start and stop the dev server without looking it up.
 
-## Milestone 1: JSX and components (3 to 5 sessions)
+## Milestone 1: JSX and components (3 to 5 sessions) ✅
 
 Goal: Understand how UI is built with components.
 
@@ -223,12 +223,16 @@ Conflicts
 - Response format: short recap of the last session completed, then next steps.
 - I will update history.md and LearningPlan.md during the session (as needed) and at the end of each session without prompting.
 - At logical checkpoints, I will prompt you to update your git repo (status/add/commit, and push if desired).
+- Next step rule: The first time you ask for "next step(s)" in a session, I will follow the current Next step in `history.md`. If you ask again in the same session, I will advance to the next logical step and update both `history.md` and `LearningPlan.md`.
 ## How I will help
 
 - I will review your code and point out mistakes.
 - I will explain concepts and suggest next steps.
 - I will not write your app code unless you ask me to.
 
+## Current focus
+
+- Next step: Add basic edit mode to update a todo's text.
 
 
 

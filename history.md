@@ -7,15 +7,16 @@ This file is maintained by the assistant to track your progress so we can resume
 - When asked "Where did we leave off" or "next steps", read both `history.md` and `LearningPlan.md` first.
 - Response format: short description of the last session completed, then next steps.
 - I will update history.md and LearningPlan.md during the session (as needed) and at the end of each session without prompting.
-- At logical checkpoints, I will prompt you to update your git repo (status/add/commit, and push if desired). 
+- At logical checkpoints, I will prompt you to update your git repo (status/add/commit, and push if desired).
+- Next step rule: The first "next step(s)" request in a session follows the current Next step here. Subsequent "next step(s)" requests in the same session advance to the next logical step and update both `history.md` and `LearningPlan.md`.
 ## Current status
 
 - Date: 2025-12-23
 - Current milestone: Milestone 2 (State and events)
-- What you worked on: Added toggle handler for completion and annotated the todo flow.
+- What you worked on: Added conditional status styling via CSS modules and clarified input labeling.
 - What felt easy:
 - What felt confusing: Handling empty input and where to place `handleAdd`.
-- Next step: Add a label/placeholder and start styling or add delete/edit.
+- Next step: Add basic edit mode to update a todo's text.
 
 ## Log
 
@@ -42,6 +43,7 @@ This file is maintained by the assistant to track your progress so we can resume
 - 2025-12-23: Expanded Git coverage to a beginner-to-intermediate command checklist.
 - 2025-12-23: Added daily Git practice note (sprinkle commands each session).
 - 2025-12-23: Added toggle handler for completion and annotated the todo flow.
-
-
-
+- 2025-12-23: Simplified completion label rendering and updated the session next-step rule.
+- 2025-12-23: Added delete button flow and confirmed it works.
+- 2025-12-23: Added conditional status styling via CSS modules.
+- 2025-12-23: Added input label/placeholder and linked label to input.

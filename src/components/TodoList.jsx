@@ -1,6 +1,6 @@
 import TodoItem from "./TodoItem";
 
-function TodoList({items, onToggle}) {
+function TodoList({items, onToggle, onDelete, onEdit}) {
     return (
         <ul>
             {items.map((item) => (
@@ -10,6 +10,8 @@ function TodoList({items, onToggle}) {
                 text={item.text} 
                 completed={item.complete} 
                 onToggle={() => onToggle(item.id)}
+                onDelete={() => onDelete(item.id)}
+                onEdit={() => onEdit(item.id, item.text)}
                 />
             ))}
         </ul>

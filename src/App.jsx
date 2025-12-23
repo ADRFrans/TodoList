@@ -31,6 +31,20 @@ function App() {
     )
   }
 
+  function handleDelete(id) {
+    setItems(items.filter((item) => item.id !== id));
+  }
+
+  function handleEdit(id, newText) {
+    setItems(
+      items.map((item) =>
+        item.id === id
+          ? { ...item, text: newText }
+          : item
+      )
+    )
+  }
+
   return (
     <>
       <div >
@@ -40,12 +54,28 @@ function App() {
           openai codex that is directly linked to my main project directory to help 
           guide me through learning react.
         </p>
-        <input value={newText} onChange={(e) =>
-          setNewText(e.target.value)} />
-        <button onClick={handleAdd}>Add</button>
+        {/* 
+          htmlFor is a makes the label associated with the input,
+          so that clicking the label focuses the input.
+        */}
+        <label htmlFor="new-todo">
+          Add a new task: 
+        </label>
+        <input 
+          id="new-todo"
+          value={newText} 
+          onChange={(e) => setNewText(e.target.value)} 
+          placeholder="Enter Todo here"
+        />
+        <button style={{ marginLeft: "10px" }} onClick={handleAdd}>Add</button>
         <section>
           <h2>Today</h2>
-          <TodoList items={items} onToggle={handleToggle} />
+          <TodoList 
+            items={items} 
+            onToggle={handleToggle} 
+            onDelete={handleDelete} 
+            onEdit={handleEdit}
+            />
         </section>    
         <section>
           <h2>Tomorrow</h2>
